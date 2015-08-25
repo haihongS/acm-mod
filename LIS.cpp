@@ -15,7 +15,6 @@ long long output(long long loca,long long num);
 
 int main()
 {
-	freopen("in","r",stdin);
 	int len;
 	scanf("%d",&len); // 输入序列长度
 	for(int i=1;i<=len;i++)
