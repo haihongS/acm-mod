@@ -4,6 +4,12 @@
 存在x,y使 a*x+b*y=gcd(a,b)
 x,y传值引用
 函数返回值为gcd(a,b)
+(返回的x，y为特解)
+(通解
+x=x0+b/gcd(a,b)*t
+y=y0-a/gcd(a,b)*t
+t为参数
+)
 */
 int Extgcd(int a,int b,int & x,int & y)
 {
