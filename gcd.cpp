@@ -16,7 +16,9 @@ int gcd(int x,int y)
 	return gcd(x-y,y);
 }
 
-// 针对大数进行优化，O(log2(max(x,y)));
+// stein算法
+//针对大数进行优化  大数取模很复杂，所以用减法和移位(除2)来优化
+//O(log2(max(x,y)));
 long long gcd(long long x,long long y)
 {
 	if(x<y)
