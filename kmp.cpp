@@ -8,6 +8,7 @@ slen,tlen 串的长
 int nx[maxn];
 char S[maxn], T[maxn];
 int slen, tlen;
+int flag; // 是否找到子串
 
 void get_next()
 {
@@ -24,7 +25,9 @@ void kmp(){
     int i=0,j=0;
     while(i<slen){
         if(j==-1||S[i]==T[j])
-			    i++ ,j++;
+		i++ ,j++;
         else j=nx[j];
+        if(j==tlen)
+            flag=1;
     }
 }
