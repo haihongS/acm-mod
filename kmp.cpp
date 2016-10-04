@@ -104,6 +104,6 @@ int KMP_Count(char *S,char *T)
             j = NEXT[j];
         }
     }
-	return ans;
+    return ans;
 }
 
